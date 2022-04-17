@@ -4,7 +4,6 @@
   --soft-pink: hsl(333, 80%, 67%);
   --dark-grayish-magenta: hsl(303, 10%, 53%);
   --light-grayish-magenta: hsl(300, 24%, 96%);
-  --max-card-width: 18em;
 }
 
 body {
@@ -32,6 +31,7 @@ body {
 
 .ratings {
   display: grid;
+  padding: 1em 0;
   gap: 0.75em 0;
 }
 
@@ -50,8 +50,6 @@ body {
   text-align: center;
   font-weight: 500;
   border-radius: 0.5em;
-  /*! width: 100%; */
-  /*! box-sizing: border-box; */
 }
 
 .rating-author {
