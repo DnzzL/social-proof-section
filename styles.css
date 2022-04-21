@@ -8,12 +8,15 @@
 
 body {
   font-family: "League Spartan", sans-serif;
+  background-color: hsl(300, 24%, 96%);
 }
 
 .container {
   margin: 1em;
   display: grid;
   gap: 2em;
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.5em 1em;
 }
 
 .headline {
@@ -113,9 +116,19 @@ body {
   padding: 2em 0 0 0;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 1000px) {
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .container {
     display: grid;
+    padding: 2em 4em;
+    max-width: 70em;
+    margin: auto;
   }
 
   .rating-section {
